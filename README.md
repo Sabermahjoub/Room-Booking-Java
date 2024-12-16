@@ -5,6 +5,10 @@ This repository contains a **Room Reservation Application** built using **Java R
 1. **Rooms**: Server-side application that manages the rooms.
 2. **RoomBookingClient**: Client-side application that interacts with the server to book rooms.
 
+   UML Package diagram :
+   
+   ![screenshot](UML_Diagrams/package.png)
+
 ---
 
 ## Project Overview  
@@ -20,18 +24,13 @@ The system is built with a **2-tier architecture** to ensure that multiple users
    - View all registered rooms.  
    - Check available rooms for specific time slots.  
 
----
 The server ensures synchronization of reservations to prevent conflicts, such as two clients booking the same room at the same time.
-
----
 
 ## Technologies Used  
 
 - **Java**: Programming language used to implement the application logic.  
 - **Java RMI**: For enabling communication between the server and the client.  
 - **Eclipse IDE**: Development environment for building and testing the application.  
-
----
 
 ### Prerequisites  
 
@@ -51,9 +50,16 @@ A center (facility) has several rooms that can be reserved for events. Each room
 
 The actions must be synchronized to prevent conflicts when multiple clients attempt to book the same time slot simultaneously.  
 
+   UML Component diagram : 
+   
+   ![screenshot](UML_Diagrams/component.png)
+
 ---
 
 ## II. Functional Scenarios  
+
+UML Use case diagram
+![screenshot](UML_Diagrams/RoomReservation_UC.png)
 
 ### 1. Reserving a Room  
 - The client selects a room and a time slot.  
@@ -87,7 +93,11 @@ The actions must be synchronized to prevent conflicts when multiple clients atte
 - The administrator can retrieve a list of all rooms registered in the system.  
 
 ### 8. Conflict Management  
-- If a client attempts to reserve a time slot that is already taken, the server returns an **error message** indicating the conflict.  
+- If a client attempts to reserve a time slot that is already taken, the server returns an **error message** indicating the conflict.
+
+   UML Class diagram
+  
+![screenshot](UML_Diagrams/classe.png)
 
 ---
 
