@@ -12,10 +12,15 @@ This repository contains a **Room Reservation Application** built using **Java R
 This project demonstrates the implementation of a distributed **Room Reservation System** using **Java RMI** technology. The server manages room availability and reservations, while clients can book, view, and manage room reservations by communicating with the server remotely.
 
 The system is built with a **2-tier architecture** to ensure that multiple users can interact with a centralized server to:
-- **Consult room availability**  
-- **Book a room**  
-- **Cancel reservations**  
 
+1. **Reserve/book a Room**: Clients can book a room for a specific time slot.  
+2. **Cancel Reservations**: Clients can remove existing reservations.  
+3. **Check Availability**: Clients can verify room availability for specific time slots.  
+4. **Admin Features**:  
+   - View all registered rooms.  
+   - Check available rooms for specific time slots.  
+
+---
 The server ensures synchronization of reservations to prevent conflicts, such as two clients booking the same room at the same time.
 
 ---
@@ -53,29 +58,21 @@ The actions must be synchronized to prevent conflicts when multiple clients atte
 ### 1. Reserving a Room  
 - The client selects a room and a time slot.  
 - The server checks if the time slot is still available.  
-- If available, the reservation is recorded in the database.  
+- If available, the reservation is recorded in the ConcurrentHashMap.  
 - The method is synchronized to prevent two clients from reserving the same time slot.  
-
----
 
 ### 2. Canceling a Reservation  
 - The client can cancel an existing reservation.  
 - The server checks if the reservation exists and then removes it from the list of reservations.  
-
----
 
 ### 3. Checking the Availability of a Specific Room for a Specific Time Slot  
 - The client sends a verification request specifying the room and time slot.  
 - The server returns the result of the verification:  
   - **Available** or **Not Available**.  
 
----
-
 ### 4. Viewing the List of Available Time Slots for a Given Room (From the Current Time Onward)  
 - The client queries the server to view all available time slots for a specific room.  
 - The server returns a list of available time slots, if they exist.  
-
----
 
 ### 5. Checking the Availability of a Room for the Entire Day  
 - The client queries the server to check if a room is available for at least one time slot during the day.  
@@ -83,17 +80,11 @@ The actions must be synchronized to prevent conflicts when multiple clients atte
   - **False**: If the room is reserved for all time slots for the entire day.  
   - **True**: Otherwise.  
 
----
-
 ### 6. Viewing the List of Available Rooms by Time Slot (Admin)  
 - An administrator can view the list of available rooms for a specified time slot.  
 
----
-
 ### 7. Viewing the List of All Registered Rooms on the Server (Admin)  
 - The administrator can retrieve a list of all rooms registered in the system.  
-
----
 
 ### 8. Conflict Management  
 - If a client attempts to reserve a time slot that is already taken, the server returns an **error message** indicating the conflict.  
@@ -115,17 +106,6 @@ The actions must be synchronized to prevent conflicts when multiple clients atte
 
 ---
 
-## Usage  
-
-1. **Reserve a Room**: Clients can book a room for a specific time slot.  
-2. **Cancel Reservations**: Clients can remove existing reservations.  
-3. **Check Availability**: Clients can verify room availability for specific time slots.  
-4. **Admin Features**:  
-   - View all registered rooms.  
-   - Check available rooms for specific time slots.  
-
----
-
 ## Future Improvements  
 
 - Add a graphical user interface (GUI) for ease of use.  
@@ -136,7 +116,7 @@ The actions must be synchronized to prevent conflicts when multiple clients atte
 
 ## Contributors  
 
-- **Your Name**  
+- **Mohamed Saber Mahjoub**  
 
 ---
 
