@@ -59,6 +59,7 @@ The actions must be synchronized to prevent conflicts when multiple clients atte
 ## II. Functional Scenarios  
 
 UML Use case diagram
+
 ![screenshot](UML_Diagrams/RoomReservation_UC.png)
 
 ### 1. Reserving a Room  
