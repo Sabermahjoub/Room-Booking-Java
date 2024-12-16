@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="WY11DOslLkLQofn7nUwP">
+    <mxGraphModel dx="1290" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-2" value="Super admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="540" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-3" value="Book a room" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="40" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-4" value="Cancel reservation" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="110" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-5" value="Check room availibility by slot" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="180" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-6" value="Check room availibility for the day" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="250" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-7" value="Get all available slots for a room&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="320" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-9" value="Get nearest available slot for any room" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="390" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-10" value="" style="endArrow=none;html=1;rounded=0;entryX=0.014;entryY=0.576;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="_-lMuFvKa6rAvaRKZZNa-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="280" as="sourcePoint" />
+            <mxPoint x="180" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-11" value="" style="endArrow=none;html=1;rounded=0;entryX=0.014;entryY=0.555;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="280" as="sourcePoint" />
+            <mxPoint x="252.0999999999999" y="137.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-12" value="" style="endArrow=none;html=1;rounded=0;entryX=0.004;entryY=0.556;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_-lMuFvKa6rAvaRKZZNa-1" target="_-lMuFvKa6rAvaRKZZNa-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="290" as="sourcePoint" />
+            <mxPoint x="262.0999999999999" y="147.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-13" value="" style="endArrow=none;html=1;rounded=0;entryX=0.027;entryY=0.585;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="86" y="280" as="sourcePoint" />
+            <mxPoint x="250.05000000000007" y="279.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-14" value="" style="endArrow=none;html=1;rounded=0;entryX=0.01;entryY=0.402;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="_-lMuFvKa6rAvaRKZZNa-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="280" as="sourcePoint" />
+            <mxPoint x="264" y="289" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-16" value="" style="endArrow=none;html=1;rounded=0;entryX=0.009;entryY=0.411;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="_-lMuFvKa6rAvaRKZZNa-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="280" as="sourcePoint" />
+            <mxPoint x="249.9999999999999" y="450.20000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-17" value="" style="endArrow=block;html=1;rounded=0;endFill=0;" edge="1" parent="1" source="_-lMuFvKa6rAvaRKZZNa-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="76" y="510" as="sourcePoint" />
+            <mxPoint x="75" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-18" value="Get all available rooms by slot" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="490" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-19" value="Get all available rooms by slot" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="560" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-20" value="" style="endArrow=none;html=1;rounded=0;entryX=0.019;entryY=0.407;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_-lMuFvKa6rAvaRKZZNa-2" target="_-lMuFvKa6rAvaRKZZNa-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="661" as="sourcePoint" />
+            <mxPoint x="212" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-21" value="" style="endArrow=none;html=1;rounded=0;entryX=0.003;entryY=0.456;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="_-lMuFvKa6rAvaRKZZNa-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="560" as="sourcePoint" />
+            <mxPoint x="263" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-22" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="199" y="26" width="240" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-23" value="Add new room" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="630" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_-lMuFvKa6rAvaRKZZNa-24" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="_-lMuFvKa6rAvaRKZZNa-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="560" as="sourcePoint" />
+            <mxPoint x="260" y="593" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
